@@ -1,0 +1,137 @@
+
+Cell sky130_fd_pr__nfet_01v8 (1) disconnected node: drain
+Cell sky130_fd_pr__nfet_01v8 (1) disconnected node: gate
+Cell sky130_fd_pr__nfet_01v8 (1) disconnected node: source
+Cell sky130_fd_pr__nfet_01v8 (1) disconnected node: bulk
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |drain                                      
+(no matching pin)                          |gate                                       
+(no matching pin)                          |source                                     
+(no matching pin)                          |bulk                                       
+1                                          |(no matching pin)                          
+2                                          |(no matching pin)                          
+3                                          |(no matching pin)                          
+4                                          |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Cell sky130_fd_pr__pfet_01v8 (1) disconnected node: drain
+Cell sky130_fd_pr__pfet_01v8 (1) disconnected node: gate
+Cell sky130_fd_pr__pfet_01v8 (1) disconnected node: source
+Cell sky130_fd_pr__pfet_01v8 (1) disconnected node: bulk
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |drain                                      
+(no matching pin)                          |gate                                       
+(no matching pin)                          |source                                     
+(no matching pin)                          |bulk                                       
+1                                          |(no matching pin)                          
+2                                          |(no matching pin)                          
+3                                          |(no matching pin)                          
+4                                          |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_BN37ZW in circuit inverter (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_ZFKXX9 in circuit inverter (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: inverter                        |Circuit 2: inverter                        
+
+---------------------------------------------------------------------------------------
+Net: sky130_fd_pr__pfet_01v8_ZFKXX9:M2/dum |Net: dummy_12                              
+  sky130_fd_pr__pfet_01v8/proxybulk = 1    |  sky130_fd_pr__pfet_01v8/proxy4 = 1       
+                                           |                                           
+Net: sky130_fd_pr__pfet_01v8_ZFKXX9:M2/dum |Net: dummy_11                              
+  sky130_fd_pr__pfet_01v8/proxysource = 1  |  sky130_fd_pr__pfet_01v8/proxy3 = 1       
+                                           |                                           
+Net: sky130_fd_pr__pfet_01v8_ZFKXX9:M2/dum |Net: dummy_10                              
+  sky130_fd_pr__pfet_01v8/proxygate = 1    |  sky130_fd_pr__pfet_01v8/proxy2 = 1       
+                                           |                                           
+Net: sky130_fd_pr__pfet_01v8_ZFKXX9:M2/dum |Net: dummy_9                               
+  sky130_fd_pr__pfet_01v8/proxydrain = 1   |  sky130_fd_pr__pfet_01v8/proxy1 = 1       
+                                           |                                           
+Net: sky130_fd_pr__nfet_01v8_BN37ZW:M1/dum |Net: dummy_8                               
+  sky130_fd_pr__nfet_01v8/proxybulk = 1    |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+Net: sky130_fd_pr__nfet_01v8_BN37ZW:M1/dum |Net: dummy_7                               
+  sky130_fd_pr__nfet_01v8/proxysource = 1  |  sky130_fd_pr__nfet_01v8/proxy3 = 1       
+                                           |                                           
+Net: sky130_fd_pr__nfet_01v8_BN37ZW:M1/dum |Net: dummy_6                               
+  sky130_fd_pr__nfet_01v8/proxygate = 1    |  sky130_fd_pr__nfet_01v8/proxy2 = 1       
+                                           |                                           
+Net: sky130_fd_pr__nfet_01v8_BN37ZW:M1/dum |Net: dummy_5                               
+  sky130_fd_pr__nfet_01v8/proxydrain = 1   |  sky130_fd_pr__nfet_01v8/proxy1 = 1       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vdd                                   |Net: vdd                                   
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(drain|source) = 
+  sky130_fd_pr__pfet_01v8/4 = 1            |  sky130_fd_pr__pfet_01v8/bulk = 1         
+                                           |                                           
+Net: vss                                   |Net: vss                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(drain|source) = 
+  sky130_fd_pr__nfet_01v8/4 = 1            |  sky130_fd_pr__nfet_01v8/bulk = 1         
+                                           |                                           
+Net: in                                    |Net: in                                    
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/gate = 1         
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/gate = 1         
+                                           |                                           
+Net: out                                   |Net: out                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(drain|source) = 
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(drain|source) = 
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: inverter                        |Circuit 2: inverter                        
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_01v8_ZFKXX9:M |Instance: sky130_fd_pr__pfet_01v8:2        
+  (1,3) = (2,2)                            |  proxy1 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
+  4 = 2                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (2,2)                   
+  proxysource = 1                          |  gate = 2                                 
+  proxybulk = 1                            |  bulk = 2                                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v8_BN37ZW:M |Instance: sky130_fd_pr__nfet_01v8:1        
+  (1,3) = (2,2)                            |  proxy1 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
+  4 = 2                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (2,2)                   
+  proxysource = 1                          |  gate = 2                                 
+  proxybulk = 1                            |  bulk = 2                                 
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+out                                        |vss **Mismatch**                           
+in                                         |in                                         
+vss                                        |out **Mismatch**                           
+---------------------------------------------------------------------------------------
+Cell pin lists for inverter and inverter altered to match.
+Device classes inverter and inverter are equivalent.
+
+Final result: Top level cell failed pin matching.

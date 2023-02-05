@@ -1,0 +1,27 @@
+** sch_path: /home/kevin/Documents/Day1/inverter/xschem/inverter_tb.sch
+**.subckt inverter_tb out in
+*.opin out
+*.opin in
+x1 in net1 GND out inverter
+V1 in GND PWL(0 0 20n 0 900n 1.8)
+.save i(v1)
+V2 net1 GND 1.8
+.save i(v2)
+**** begin user architecture code
+
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.control
+	tran 1n 1u
+	plot v(in) v(out)
+.endc
+.save all
+
+
+**** end user architecture code
+**.ends
+
+.include inverter.spice
+
+.GLOBAL GND
+.end

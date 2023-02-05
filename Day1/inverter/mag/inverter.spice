@@ -1,0 +1,42 @@
+* NGSPICE file created from inverter.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_BN37ZW a_18_n450# a_n33_n538# a_n76_n450# a_n178_n624#
+X0 a_18_n450# a_n33_n538# a_n76_n450# a_n178_n624# sky130_fd_pr__nfet_01v8 ad=1.305e+12p pd=9.58e+06u as=1.305e+12p ps=9.58e+06u w=4.5e+06u l=180000u
+C0 a_n76_n450# a_18_n450# 0.23fF
+C1 a_n76_n450# a_n33_n538# 0.02fF
+C2 a_18_n450# a_n33_n538# 0.02fF
+C3 a_18_n450# a_n178_n624# 0.33fF
+C4 a_n76_n450# a_n178_n624# 0.42fF
+C5 a_n33_n538# a_n178_n624# 0.38fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_ZFKXX9 a_n33_n997# w_n214_n1119# a_n76_n900# a_18_n900#
++ VSUBS
+X0 a_18_n900# a_n33_n997# a_n76_n900# w_n214_n1119# sky130_fd_pr__pfet_01v8 ad=2.61e+12p pd=1.858e+07u as=2.61e+12p ps=1.858e+07u w=9e+06u l=180000u
+C0 a_n33_n997# a_n76_n900# 0.02fF
+C1 a_18_n900# a_n33_n997# 0.02fF
+C2 a_18_n900# a_n76_n900# 0.45fF
+C3 a_n33_n997# w_n214_n1119# 0.19fF
+C4 a_n76_n900# w_n214_n1119# 0.56fF
+C5 a_18_n900# w_n214_n1119# 0.34fF
+C6 a_18_n900# VSUBS 0.24fF
+C7 a_n76_n900# VSUBS 0.24fF
+C8 a_n33_n997# VSUBS 0.16fF
+C9 w_n214_n1119# VSUBS 3.99fF
+.ends
+
+.subckt inverter in vdd vss out
+XM1 vss in out vss sky130_fd_pr__nfet_01v8_BN37ZW
+XM2 in vdd vdd out vss sky130_fd_pr__pfet_01v8_ZFKXX9
+C0 out vss 0.18fF
+C1 vdd in 0.52fF
+C2 out vdd 0.21fF
+C3 out in 0.42fF
+C4 vss vdd 0.08fF
+C5 vss in 0.34fF
+C6 out 0 1.14fF
+C7 in 0 1.61fF
+C8 vdd 0 4.57fF
+C9 vss 0 0.72fF
+.ends
+
